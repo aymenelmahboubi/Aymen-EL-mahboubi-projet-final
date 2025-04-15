@@ -1,0 +1,252 @@
+/* Basic colors and settings */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f7f7;
+    color: #444444;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General reset for everything */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Menu container */
+  .menu-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  /* Hide radio buttons */
+  .tab-input {
+    display: none;
+  }
+  
+  /* Menu tab buttons */
+  .menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    
+  }
+  
+  .tab-btn {
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444444;
+    cursor: pointer;
+    font-style: italic;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn:hover {
+    color: #ffb03b;
+  }
+  
+  .tab-btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ffb03b;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn:hover::after {
+    width: 100%;
+  }
+  
+  /* Menu items grid */
+  .menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 60px;
+  }
+  
+  /* Menu item */
+  .menu-item {
+    display: none;
+    align-items: center;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: none;
+    box-shadow: none;
+    
+  }
+  
+  /* Show menu items when radio is selected */
+  #tab1:checked ~ .menu-items .menu-item {
+    display: flex;
+  }
+  
+  #tab2:checked ~ .menu-items #content2 {
+    display: flex;
+  }
+  
+  #tab3:checked ~ .menu-items #content3 {
+    display: flex;
+  }
+  
+  #tab4:checked ~ .menu-items #content4 {
+    display: flex;
+  }
+  
+  /* Highlight active tab */
+  #tab1:checked ~ .menu-tabs label[for="tab1"],
+  #tab2:checked ~ .menu-tabs label[for="tab2"],
+  #tab3:checked ~ .menu-tabs label[for="tab3"],
+  #tab4:checked ~ .menu-tabs label[for="tab4"] {
+    color: #ffb03b;
+  }
+  
+  #tab1:checked ~ .menu-tabs label[for="tab1"]::after,
+  #tab2:checked ~ .menu-tabs label[for="tab2"]::after,
+  #tab3:checked ~ .menu-tabs label[for="tab3"]::after,
+  #tab4:checked ~ .menu-tabs label[for="tab4"]::after {
+    width: 100%;
+  }
+  
+  /* Image in menu item */
+  .item-image {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text content inside menu item */
+  .item-content {
+    flex-grow: 1;
+    min-width: 0;
+    
+  }
+  
+  /* Header in item */
+  .item-header {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  
+  .item-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444444;
+    margin-right: 10px;
+    z-index: 1;
+    background: #f7f7f7;
+    padding-right: 5px;
+    
+  }
+  
+  .item-header .price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffb03b;
+    margin-left: auto;
+    z-index: 1;
+    background: #f7f7f7;
+    padding-left: 5px;
+  }
+  
+  .item-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-bottom: 2px dotted #aaaaaa;
+    z-index: 0;
+  }
+  
+  
+  /* Description under item */
+  .description {
+    color: #aaaaaa;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+  }
+ 
+
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    
+    .menu-tabs {
+      flex-wrap: wrap;
+    }
+  
+    .tab-btn {
+      padding: 6px 15px;
+      font-size: 14px;
+
+    }
+  
+    .menu-items {
+      grid-template-columns: 1fr;
+      width: 10px;
+    
+    }
+  
+    .menu-item {
+      padding: 10px 0;
+    }
+  
+    .item-image {
+      width: 60px;
+      height: 60px;
+      margin-right: 12px;
+      
+      
+    }
+    
+    
+    
+  
+    .item-header h3 {
+      font-size: 15px;
+    }
+  
+    .item-header .price {
+      font-size: 15px;
+      
+    }
+  
+    .description {
+      font-size: 13px;
+    }
+  }
+  

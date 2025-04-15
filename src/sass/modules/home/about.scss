@@ -1,0 +1,62 @@
+.about{
+    background-color: #fffaf3;
+}
+li{
+    text-decoration: none;
+   
+}
+// why us 
+
+.container1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title-or{
+    color: orange;
+}
+.card-item{
+    background-color: #f9f9f9;
+    border: 0.5px solid #f9f9f9;
+    a {
+        text-decoration: dashed;
+    }
+    .link-after{
+        color: black;
+    }
+}
+.section-title{
+
+    padding-bottom: 5vh;
+}
+.bg1{
+    background-color: #f9f9f9;
+   
+}
+button{
+    border: none;
+    background-color: orange;
+    padding: 1vw 5vw;
+    border-radius: 10px;
+    color: #f9f9f9;
+}
+.member{
+    position: relative;
+}
+.chef_info{
+    
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background-color: red;
+    width: 100%;
+    .right_info{
+        display: flex;
+        gap: 14vw;
+       
+    }
+}
+
