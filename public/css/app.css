@@ -11867,18 +11867,37 @@ li {
 }
 
 .title-or {
-  color: orange;
+  color: #fd7e14;
 }
 
 .card-item {
-  background-color: #f9f9f9;
-  border: 0.5px solid #f9f9f9;
+  background-color: white;
+  padding: 32px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card-item a {
-  text-decoration: dashed;
+.card-item span {
+  display: block;
+  color: #fd7e14;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
-.card-item .link-after {
+.card-item h4, .card-item .h4 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-item h4 a, .card-item .h4 a {
+  text-decoration: none;
   color: black;
+}
+.card-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(252, 206, 121);
 }
 
 .section-title {
@@ -11891,7 +11910,7 @@ li {
 
 button {
   border: none;
-  background-color: orange;
+  background-color: #fd7e14;
   padding: 1vw 5vw;
   border-radius: 10px;
   color: #f9f9f9;
@@ -11907,7 +11926,6 @@ button {
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  background-color: red;
   width: 100%;
 }
 .chef_info .right_info {
@@ -11921,7 +11939,7 @@ button {
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: #ff6600;
+  background-color: #fd7e14;
   color: white;
   border-radius: 10px;
   font-size: 24px;
@@ -12083,7 +12101,7 @@ body {
 }
 
 .tab-btn:hover {
-  color: #ffb03b;
+  color: #fd7e14;
 }
 
 .tab-btn::after {
@@ -12093,7 +12111,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: #ffb03b;
+  background-color: #fd7e14;
   transform: translateX(-50%);
   transition: all 0.3s ease;
 }
@@ -12264,14 +12282,14 @@ body {
   background-color: #f8f9fa;
 }
 
+.special-input {
+  display: none;
+}
+
 .special-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
-}
-
-.special-input {
-  display: none;
 }
 
 .special-container {
@@ -12282,7 +12300,6 @@ body {
 
 .special-navigation {
   width: 240px;
-  flex-shrink: 0;
   border-right: 2px solid rgba(253, 126, 20, 0.1);
   padding-right: 20px;
 }
@@ -12300,10 +12317,10 @@ body {
   position: absolute;
   right: -22px;
   top: 50%;
-  transform: translateY(-50%);
+  background-color: #fd7e14;
   width: 4px;
   height: 0;
-  background-color: #fd7e14;
+  transform: translateY(-50%);
 }
 .special-navigation .special-link:hover {
   color: #fd7e14;
@@ -12354,7 +12371,6 @@ body {
   width: 100%;
   max-width: 450px;
   border-radius: 50%;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 #special-tab1:checked ~ .special-container .special-navigation label[for=special-tab1] {
@@ -12601,10 +12617,9 @@ body {
   bottom: 0;
   left: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 .chef-info h3, .chef-info .h3 {
   font-weight: 500;
@@ -12627,11 +12642,7 @@ body {
 }
 .social-links a {
   text-decoration: none;
-}
-.social-links a img {
-  width: 16px;
-  height: 16px;
-  opacity: 0.6;
+  color: black;
 }
 
 @media (max-width: 768px) {

@@ -50,7 +50,7 @@ body {
   }
   
   .tab-btn:hover {
-    color: #ffb03b;
+    color:$orange;
   }
   
   .tab-btn::after {
@@ -60,7 +60,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: #ffb03b;
+    background-color:$orange;
     transform: translateX(-50%);
     transition: all 0.3s ease;
   }
