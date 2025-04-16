@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./public/css/app.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./public/css/contact.css">
 </head>
 
 <body>
@@ -14,37 +14,93 @@
 
 
 
-  <header>
-    <!-- logo -->
-    <div class="container header-containe">
-      <a href="">delicios</a>
-      <div class="navigation">
-        <label for="menu">
-          <svg class="burger" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
-            class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-          </svg>
-        </label>
-        <input type="checkbox" name="" id="menu">
-        <nav>
-          <label class="close" for="menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-x"
-              viewBox="0 0 16 16">
-              <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-            </svg>
-          </label>
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-      </div>
+  <nav class="navbar fixed-top">
+    <h1 class="logo">Delicious</h1>
+    <div class="links">
+        <a class="home" href=""> Home</a>
+        <a href="" id="about">About</a>
+        <a href="" id="menu">Menu </a>
+        <a href="" id="Specials">Specials</a>
+        <a href="" id="Events">Events</a>
+        <a href="" id="Chefs">Chefs</a>
+        <a href="" id="Gallery">Gallery</a>
+        <a href="" >Dropdown</a>
+        <a href="" id="Contact"> Contact</a>
     </div>
-  </header>
+
+</nav>
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide">
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./public/images/slide-1.jpg" class="d-block w-100" alt="...">
+            <div class="melange">
+                <h1><span class="org">Delicious</span> Restaurant</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+                <div class="btn">
+                    <button class="same">Our Menu</button> <button class="same">Book a Table</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="carousel-item">
+            <img src="./public/images/slide-2.jpg" class="d-block w-100" alt="...">
+            <div class="melange">
+                <h1>At vero eos et accusamus </h1>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                    maxime placeat facere possimus, omnis voluptas assumenda est,
+                    omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.
+                </p>
+                <div class="btn">
+                    <button class="same">Our Menu</button> <button class="same">Book a Table</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="carousel-item">
+            <img src="./public/images/slide-3.jpg" class="d-block w-100" alt="...">
+            <div class="melange">
+                <h1>Temporibus autem quibusdam </h1>
+                <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus
+                    error sit voluptatem accusantium.
+                </p>
+                <div class="btn">
+                    <button class="same">Our Menu</button> <button class="same">Book a Table</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+</div>
 
 
 
@@ -143,17 +199,17 @@
   </section>
 
 
-  <!-- tabs -->
+  <!--menu -->
 
 
   <div class="menu-container">
-    <!-- Hidden Radio Buttons -->
+   
     <input type="radio" id="tab1" name="tabs" checked class="tab-input">
     <input type="radio" id="tab2" name="tabs" class="tab-input">
     <input type="radio" id="tab3" name="tabs" class="tab-input">
     <input type="radio" id="tab4" name="tabs" class="tab-input">
 
-    <!-- Menu Filter Tabs -->
+   
     <div class="menu-tabs">
       <label for="tab1" class="tab-btn">All</label>
       <label for="tab2" class="tab-btn">Starters</label>
@@ -161,9 +217,9 @@
       <label for="tab4" class="tab-btn">Specialty</label>
     </div>
 
-    <!-- Menu Items -->
+   
     <div class="menu-items">
-      <!-- Starters -->
+     
       <div class="menu-item" id="content2">
         <div class="item-image">
           <img src="./public/images/specials-1.jpg" >
@@ -203,7 +259,7 @@
         </div>
       </div>
 
-      <!-- Salads -->
+     
       <div class="menu-item" id="content3">
         <div class="item-image">
           <img src="./public/images/gallery-4.jpg" >
@@ -242,6 +298,10 @@
           <p class="description">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</p>
         </div>
       </div>
+
+
+
+
 
       <!-- Specialty -->
       <div class="menu-item" id="content4">

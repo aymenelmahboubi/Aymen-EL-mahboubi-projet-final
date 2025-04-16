@@ -1,10 +1,10 @@
-// Variables
+
 $orange: #ffb03b;
 $dark: #444444;
 $light: #ffffff;
 $gray: #999999;
 
-// Reset
+
 * {
     margin: 0;
     padding: 0;
@@ -17,14 +17,14 @@ body {
     background-color: #fafafa;
 }
 
-// Chefs Section
+
 .chefs-section {
     padding: 60px 0;
     max-width: 1140px;
     margin: 0 auto;
 }
 
-// Section Title
+
 .section-title {
     text-align: center;
     padding: 0 15px;
@@ -52,7 +52,7 @@ body {
     }
 }
 
-// Chefs Container
+
 .chefs-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -60,20 +60,20 @@ body {
     padding: 0 15px;
 }
 
-// Chef Card
+
 .chef-card {
     position: relative;
     text-align: center;
 }
 
-// Chef Image
+
 .chef-img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
-// Chef Info
+
 .chef-info {
     position: absolute;
     bottom: 0;
@@ -100,7 +100,7 @@ body {
     }
 }
 
-// Social Links
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -117,7 +117,7 @@ body {
     }
 }
 
-// Responsive Design
+
 
 
 @media (max-width: 768px) {
