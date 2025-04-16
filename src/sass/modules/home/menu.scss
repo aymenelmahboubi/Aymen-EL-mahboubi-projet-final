@@ -9,14 +9,14 @@ body {
     box-sizing: border-box;
   }
   
-  /* General reset for everything */
+ 
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Menu container */
+ 
   .menu-container {
     max-width: 1200px;
     margin: 50px auto;
@@ -24,12 +24,12 @@ body {
     position: relative;
   }
   
-  /* Hide radio buttons */
+  
   .tab-input {
     display: none;
   }
   
-  /* Menu tab buttons */
+  
   .menu-tabs {
     display: flex;
     justify-content: center;
@@ -69,14 +69,14 @@ body {
     width: 100%;
   }
   
-  /* Menu items grid */
+  
   .menu-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px 60px;
   }
   
-  /* Menu item */
+  
   .menu-item {
     display: none;
     align-items: center;
@@ -93,7 +93,7 @@ body {
     
   }
   
-  /* Show menu items when radio is selected */
+  
   #tab1:checked ~ .menu-items .menu-item {
     display: flex;
   }
@@ -115,7 +115,7 @@ body {
   #tab2:checked ~ .menu-tabs label[for="tab2"],
   #tab3:checked ~ .menu-tabs label[for="tab3"],
   #tab4:checked ~ .menu-tabs label[for="tab4"] {
-    color: #ffb03b;
+    color:$orange;
   }
   
   #tab1:checked ~ .menu-tabs label[for="tab1"]::after,
@@ -127,29 +127,31 @@ body {
   
   /* Image in menu item */
   .item-image {
-    width: 70px;
-    height: 70px;
+   
     margin-right: 15px;
     flex-shrink: 0;
+    width: 70px;
+    height: 70px;
   }
   
   .item-image img {
+   object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 50%;
     border: 3px solid #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+
   }
   
-  /* Text content inside menu item */
+  
   .item-content {
     flex-grow: 1;
     min-width: 0;
     
   }
   
-  /* Header in item */
+  
   .item-header {
     display: flex;
     align-items: baseline;
@@ -171,7 +173,7 @@ body {
   .item-header .price {
     font-size: 16px;
     font-weight: 700;
-    color: #ffb03b;
+    color:$orange;
     margin-left: auto;
     z-index: 1;
     background: #f7f7f7;
@@ -189,7 +191,7 @@ body {
   }
   
   
-  /* Description under item */
+  
   .description {
     color: #aaaaaa;
     font-size: 14px;
@@ -202,7 +204,7 @@ body {
   }
  
 
-  /* Mobile styles */
+  
   @media (max-width: 768px) {
     
     .menu-tabs {
