@@ -1,5 +1,5 @@
 // Variables
-$primary-color: #007bff;
+
 $secondary-color: #6c757d;
 $white: #ffffff;
 $dark: #343a40;
@@ -76,7 +76,7 @@ $dark: #343a40;
                 content: "✓";
                 position: absolute;
                 left: 0;
-                color: $primary-color;
+                color: transparent;
                 font-weight: bold;
             }
         }
@@ -90,37 +90,7 @@ $dark: #343a40;
 }
 
 // Carousel Controls
-.carousel {
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 50px;
-        height: 50px;
-        background-color: rgba($dark, 0.5);
-        border-radius: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 0;
-        transition: opacity 0.3s ease;
 
-        &:hover {
-            background-color: rgba($dark, 0.8);
-        }
-    }
-
-    .carousel-control-prev {
-        left: -25px;
-    }
-
-    .carousel-control-next {
-        right: -25px;
-    }
-
-    &:hover {
-        .carousel-control-prev,
-        .carousel-control-next {
-            opacity: 1;
-        }
-    }
 
     .carousel-indicators {
         bottom: -3rem;
@@ -135,14 +105,14 @@ $dark: #343a40;
             transition: all 0.3s ease;
 
             &.active {
-                background-color: $primary-color;
+                background-color: transparent;
                 opacity: 1;
                 width: 25px;
                 border-radius: 10px;
             }
         }
     }
-}
+
 
 // Responsive Adjustments
 @media (max-width: 375px) {

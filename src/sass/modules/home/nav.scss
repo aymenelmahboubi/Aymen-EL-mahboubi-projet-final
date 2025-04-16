@@ -1,5 +1,5 @@
 .navbar{
-     display: flex;
+ display: flex;
     align-items: center;
     justify-content: space-between;
     padding-inline: 4vw;
@@ -27,20 +27,18 @@ color: #ffb03b
 .logo {
  color: white;
     font-size: 30px;
-    font-weight: 700;
+    
 
 }
    
 
-img{
-     position: relative;
-}
+
    
 
 
-.melange{
+.discreption{
 
-       display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -48,21 +46,11 @@ img{
     inset: 90px 64px 64px 64px;
     color: white;
     p {
-        padding-inline: 20rem;
+        padding-inline: 3vw;
     }
         
 }
  
-
-
-
-.org{ 
-    color: #ffb03b;
-
-}
-   
-
-
 
 
 
@@ -74,7 +62,7 @@ img{
     
 
 
-.same{
+.button{
      color: white;
     background: none;
     font-weight: 500;
@@ -86,5 +74,20 @@ img{
     margin: 10px 5px;
     border: 2px solid #ffb03b;
    
+}
+.block{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+    .block{
+        display: block;
+    }
+}
+.btn{
+    flex-direction: column;
 }
    

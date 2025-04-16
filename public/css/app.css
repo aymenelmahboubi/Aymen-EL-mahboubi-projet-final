@@ -11988,7 +11988,7 @@ button {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #007bff;
+  color: transparent;
   font-weight: bold;
 }
 .party-content .additional-info {
@@ -11997,35 +11997,10 @@ button {
   font-style: italic;
 }
 
-.carousel .carousel-control-prev,
-.carousel .carousel-control-next {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(52, 58, 64, 0.5);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.carousel .carousel-control-prev:hover,
-.carousel .carousel-control-next:hover {
-  background-color: rgba(52, 58, 64, 0.8);
-}
-.carousel .carousel-control-prev {
-  left: -25px;
-}
-.carousel .carousel-control-next {
-  right: -25px;
-}
-.carousel:hover .carousel-control-prev,
-.carousel:hover .carousel-control-next {
-  opacity: 1;
-}
-.carousel .carousel-indicators {
+.carousel-indicators {
   bottom: -3rem;
 }
-.carousel .carousel-indicators button {
+.carousel-indicators button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -12034,8 +12009,8 @@ button {
   margin: 0 5px;
   transition: all 0.3s ease;
 }
-.carousel .carousel-indicators button.active {
-  background-color: #007bff;
+.carousel-indicators button.active {
+  background-color: transparent;
   opacity: 1;
   width: 25px;
   border-radius: 10px;
@@ -12534,14 +12509,9 @@ a {
 .logo {
   color: white;
   font-size: 30px;
-  font-weight: 700;
 }
 
-img {
-  position: relative;
-}
-
-.melange {
+.discreption {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12550,12 +12520,8 @@ img {
   inset: 90px 64px 64px 64px;
   color: white;
 }
-.melange p {
-  padding-inline: 20rem;
-}
-
-.org {
-  color: #ffb03b;
+.discreption p {
+  padding-inline: 3vw;
 }
 
 .btn {
@@ -12563,7 +12529,7 @@ img {
   gap: 30px;
 }
 
-.same {
+.button {
   color: white;
   background: none;
   font-weight: 500;
@@ -12574,6 +12540,22 @@ img {
   border-radius: 50px;
   margin: 10px 5px;
   border: 2px solid #ffb03b;
+}
+
+.block {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .block {
+    display: block;
+  }
+}
+.btn {
+  flex-direction: column;
 }
 
 * {
