@@ -12054,7 +12054,6 @@ button {
     padding-left: 0;
   }
 }
-/* Basic colors and settings */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f7f7;
@@ -12072,10 +12071,10 @@ body {
 }
 
 .menu-container {
-  max-width: 1200px;
-  margin: 50px auto;
   padding: 0 20px;
   position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
 }
 
 .tab-input {
@@ -12090,14 +12089,14 @@ body {
 }
 
 .tab-btn {
-  padding: 8px 20px;
-  font-size: 16px;
   font-weight: 500;
   color: #444444;
   cursor: pointer;
   font-style: italic;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
+  padding: 8px 20px;
+  font-size: 16px;
 }
 
 .tab-btn:hover {
@@ -12109,11 +12108,11 @@ body {
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0;
   left: 50%;
-  background-color: #fd7e14;
+  bottom: 0;
   transform: translateX(-50%);
   transition: all 0.3s ease;
+  background-color: #fd7e14;
 }
 
 .tab-btn:hover::after {
@@ -12129,9 +12128,9 @@ body {
 .menu-item {
   display: none;
   align-items: center;
-  padding: 10px 0;
   background: none;
   border: none;
+  padding: 10px 0;
   box-shadow: none;
   transition: all 0.3s ease;
 }
@@ -12226,18 +12225,17 @@ body {
   left: 0;
   right: 0;
   top: 50%;
-  border-bottom: 2px dotted #aaaaaa;
-  z-index: 0;
+  border-bottom: 2px dotted #858585;
+  z-index: 0 !important;
 }
 
 .description {
-  color: #aaaaaa;
+  color: #b4b2b2;
   font-size: 14px;
-  font-style: italic;
   margin-top: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
