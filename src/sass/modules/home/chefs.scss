@@ -1,8 +1,6 @@
 
 $orange: #ffb03b;
-$dark: #444444;
-$light: #ffffff;
-$gray: #999999;
+
 
 
 * {
@@ -13,7 +11,7 @@ $gray: #999999;
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: $dark;
+   
     background-color: #fafafa;
 }
 
@@ -44,7 +42,7 @@ body {
         font-family: 'Playfair Display', serif;
         font-size: 36px;
         font-style: italic;
-        color: $dark;
+        
 
         span {
             color: $orange;
@@ -87,14 +85,13 @@ body {
     h3 {
         font-weight: 500;
         font-size: 18px;
-        margin-bottom: 5px;
-        color: $dark;
+        margin-bottom: 5p
     }
 
     span {
         font-style: italic;
         font-size: 14px;
-        color: $gray;
+        color: gray;
         display: block;
         margin-bottom: 10px;
 

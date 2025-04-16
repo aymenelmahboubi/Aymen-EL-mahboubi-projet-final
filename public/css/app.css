@@ -12558,7 +12558,6 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #444444;
   background-color: #fafafa;
 }
 
@@ -12586,7 +12585,6 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 36px;
   font-style: italic;
-  color: #444444;
 }
 .section-title h2 span, .section-title .h2 span {
   color: #ffb03b;
@@ -12622,13 +12620,12 @@ body {
 .chef-info h3, .chef-info .h3 {
   font-weight: 500;
   font-size: 18px;
-  margin-bottom: 5px;
-  color: #444444;
+  margin-bottom: 5p;
 }
 .chef-info span {
   font-style: italic;
   font-size: 14px;
-  color: #999999;
+  color: gray;
   display: block;
   margin-bottom: 10px;
 }
