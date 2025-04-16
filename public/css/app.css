@@ -11853,6 +11853,7 @@ textarea.form-control-lg {
 }
 .about {
   background-color: #fffaf3;
+  padding-top: 8vh;
 }
 
 li {
@@ -11929,19 +11930,18 @@ button {
 .carousel-container {
   max-width: 100%;
   margin: 2rem auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .carousel {
   background-image: url(../../../../public/images/testimonials-bg.jpg);
-  opacity: 0, 5;
 }
 
 .custom-party-slide {
   background-color: transparent;
   padding: 3rem 2rem;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .custom-party-slide .row {
   min-height: 500px;
@@ -11975,36 +11975,27 @@ button {
 }
 .party-content .features {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin-bottom: 2rem;
 }
 .party-content .features li {
-  position: relative;
   padding-left: 2rem;
   margin-bottom: 1rem;
   color: white;
 }
-.party-content .features li:before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: transparent;
-  font-weight: bold;
-}
 .party-content .additional-info {
   font-size: 0.9rem;
-  color: #6c757d;
   font-style: italic;
 }
 
 .carousel-indicators {
+  position: relative;
   bottom: -3rem;
 }
 .carousel-indicators button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #6c757d;
   opacity: 0.5;
   margin: 0 5px;
   transition: all 0.3s ease;
@@ -12016,7 +12007,7 @@ button {
   border-radius: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .custom-party-slide {
     padding: 2rem 1rem;
   }
@@ -12032,10 +12023,6 @@ button {
   }
   .party-content .features li {
     padding-left: 0;
-  }
-  .party-content .features li:before {
-    position: relative;
-    margin-right: 10px;
   }
 }
 /* Basic colors and settings */
@@ -12275,7 +12262,6 @@ body {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  color: #444444;
   background-color: #f8f9fa;
 }
 
@@ -12298,16 +12284,14 @@ body {
 .special-navigation {
   width: 240px;
   flex-shrink: 0;
-  border-right: 2px solid rgba(255, 176, 59, 0.1);
+  border-right: 2px solid rgba(253, 126, 20, 0.1);
   padding-right: 20px;
 }
 .special-navigation .special-link {
   display: block;
   padding: 12px 15px;
   margin-bottom: 8px;
-  color: #444444;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
   position: relative;
   font-weight: 500;
   border-radius: 4px 0 0 4px;
@@ -12320,16 +12304,15 @@ body {
   transform: translateY(-50%);
   width: 4px;
   height: 0;
-  background-color: #ffb03b;
-  transition: all 0.3s ease-in-out;
+  background-color: #fd7e14;
 }
 .special-navigation .special-link:hover {
-  color: #ffb03b;
-  background-color: rgba(255, 176, 59, 0.05);
+  color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.05);
 }
 .special-navigation .special-link.active {
-  color: #ffb03b;
-  background-color: rgba(255, 176, 59, 0.1);
+  color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.1);
 }
 
 .special-content {
@@ -12340,7 +12323,6 @@ body {
   display: none;
   opacity: 0;
   gap: 40px;
-  transition: all 0.3s ease-in-out;
 }
 
 .special-details {
@@ -12348,20 +12330,18 @@ body {
 }
 .special-details .special-title {
   font-size: 28px;
-  color: #444444;
   margin-bottom: 20px;
   font-style: italic;
   line-height: 1.3;
 }
 .special-details .special-subtitle {
   font-size: 16px;
-  color: #444444;
   margin-bottom: 15px;
   line-height: 1.6;
 }
 .special-details .special-description {
   font-size: 15px;
-  color: #aaaaaa;
+  color: gray;
   line-height: 1.8;
 }
 
@@ -12379,8 +12359,8 @@ body {
 }
 
 #special-tab1:checked ~ .special-container .special-navigation label[for=special-tab1] {
-  color: #ffb03b;
-  background-color: rgba(255, 176, 59, 0.1);
+  color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.1);
 }
 #special-tab1:checked ~ .special-container .special-navigation label[for=special-tab1]:before {
   height: 70%;
@@ -12391,8 +12371,8 @@ body {
 }
 
 #special-tab2:checked ~ .special-container .special-navigation label[for=special-tab2] {
-  color: #ffb03b;
-  background-color: rgba(255, 176, 59, 0.1);
+  color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.1);
 }
 #special-tab2:checked ~ .special-container .special-navigation label[for=special-tab2]:before {
   height: 70%;
@@ -12403,8 +12383,8 @@ body {
 }
 
 #special-tab3:checked ~ .special-container .special-navigation label[for=special-tab3] {
-  color: #ffb03b;
-  background-color: rgba(255, 176, 59, 0.1);
+  color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.1);
 }
 #special-tab3:checked ~ .special-container .special-navigation label[for=special-tab3]:before {
   height: 70%;
@@ -12415,8 +12395,8 @@ body {
 }
 
 #special-tab4:checked ~ .special-container .special-navigation label[for=special-tab4] {
-  color: #ffb03b;
-  background-color: rgba(255, 176, 59, 0.1);
+  color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.1);
 }
 #special-tab4:checked ~ .special-container .special-navigation label[for=special-tab4]:before {
   height: 70%;
@@ -12427,8 +12407,8 @@ body {
 }
 
 #special-tab5:checked ~ .special-container .special-navigation label[for=special-tab5] {
-  color: #ffb03b;
-  background-color: rgba(255, 176, 59, 0.1);
+  color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.1);
 }
 #special-tab5:checked ~ .special-container .special-navigation label[for=special-tab5]:before {
   height: 70%;
@@ -12438,14 +12418,14 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .special-container {
     flex-direction: column;
   }
   .special-navigation {
     width: 100%;
     border-right: none;
-    border-bottom: 2px solid rgba(255, 176, 59, 0.1);
+    border-bottom: 2px solid rgba(253, 126, 20, 0.1);
     padding-right: 0;
     padding-bottom: 15px;
     margin-bottom: 20px;
@@ -12473,17 +12453,16 @@ body {
     max-width: 100%;
   }
 }
-@media (max-width: 768px) {
-  .special-details .special-title {
-    font-size: 24px;
-  }
-  .special-details .special-subtitle {
-    font-size: 15px;
-  }
-  .special-details .special-description {
-    font-size: 14px;
-  }
+.special-details .special-title {
+  font-size: 24px;
 }
+.special-details .special-subtitle {
+  font-size: 15px;
+}
+.special-details .special-description {
+  font-size: 14px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
